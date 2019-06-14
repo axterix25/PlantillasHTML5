@@ -1,0 +1,7 @@
+.vscode
+source
+package.json
+gulpfile.js
+node_modules
+package-lock.json
+__git
