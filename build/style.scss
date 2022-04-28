@@ -1,0 +1,209 @@
+// body {
+//   height: 2000px;
+// }
+
+/************************************************
+************************************************/
+
+header {
+  font-family: 'Saira Semi Condensed', sans-serif;
+  background-color: #1178ee;
+  color: #fff;
+  h1 {
+    text-align: center;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    letter-spacing: 0.5rem;
+  }
+}
+
+/************************************************
+************************************************/
+
+nav {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  ul {
+    overflow: hidden;
+    background-color: rgba(201, 123, 7, 0.479);
+    li {
+      border: 1px solid rgba(238, 213, 176, 0.938);
+      cursor: pointer;
+      background-color: rgba(221, 145, 31, 0.479);
+      text-align: center;
+      a {
+        text-transform: uppercase;
+        letter-spacing: 0.1vw;
+        font: 0.8rem lato, sans-serif;
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        padding: 1vw;
+        margin-left: 1vw;
+        transition: 1.5s;
+      }
+
+      @media screen and (max-width: 600px) {
+        width: 100%;
+      }
+
+      @media screen and (min-width: 992px) {
+        margin: 5px;
+        float: left;
+      }
+      &:hover a {
+        color: #000;
+      }
+    }
+  }
+}
+
+/************************************************
+************************************************/
+
+footer {
+  text-align: center;
+  background-color: rgba(221, 145, 31, 0.479);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+  p {
+    font-style: 1em;
+  }
+}
+
+/************************************************
+************************************************/
+
+/************************************************
+Botón subir
+************************************************/
+
+.btnSubir {
+  font-size: 2rem;
+  font-weight: 800;
+  color: rgba(221, 145, 31, 0.479);
+  transition: all 0.5s;
+  position: fixed;
+  right: 2vw;
+  bottom: 15vh;
+  cursor: pointer;
+
+  &:hover {
+    transition: all 0.5s;
+    text-shadow: 0 0 0.1rem #1178ee;
+    bottom: 16vh;
+  }
+}
+
+/************************************************
+Whatsup
+ Uso: <div class="whatsapp"><i class='fab fa-whatsapp'></i> <a href="tel:+34123456789">+34123456789</a></div>
+************************************************/
+
+.whatsapp {
+  position: fixed;
+  top: 3%;
+  width: 180px;
+  height: 30px;
+  right: -145px;
+  transition: right 0.5s;
+  color: #fff;
+  background-color: #25d366;
+  cursor: pointer;
+  
+  padding: 1vh 1vw;
+  border-bottom-left-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  font-size: 100%;
+  &:hover {
+    right: 0;
+  }
+
+  a {
+    padding-left: 3vw;
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+/************************************************
+Logos redes sociales
+************************************************/
+
+.rrss {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  a {
+    border-radius: 50%;
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    right: 2vw;
+    margin-bottom: 2vh;
+    text-align: center;
+    color: #fff;
+    display: block;
+    transition: all 0.5s;
+    &.instagram {
+      background: #f09433;
+      background: linear-gradient(
+        45deg,
+        #f09433 0,
+        #e6683c 25%,
+        #dc2743 50%,
+        #cc2366 75%,
+        #bc1888 100%
+      );
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+    }
+
+    &.twitter {
+      background-color: #1da1f2;
+    }
+
+    &.facebook {
+      background-color: #3b5998;
+    }
+
+    &:hover {
+      right: 4vw;
+    }
+  }
+}
+
+/************************************************
+control pagina
+************************************************/
+
+.fecha {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  border: 1px solid rgba(226, 62, 21, 0.938);
+
+  @media only screen and (max-width: 600px) {
+    background: red;
+  }
+
+  @media only screen and (min-width: 600px) {
+    background: green;
+
+    @media only screen and (min-width: 768px) {
+      background: #00f;
+    }
+
+    @media only screen and (min-width: 992px) {
+      background: orange;
+    }
+
+    @media only screen and (min-width: 1200px) {
+      background: pink;
+    }
+  }
+}
